@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Logo'
+import '../../Style/NavBar.css'
 
 function NavBar() {
   return (

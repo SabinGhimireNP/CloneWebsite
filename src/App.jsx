@@ -1,13 +1,16 @@
-import { useState } from 'react'
 import './App.css'
+import NavBar from './Components/NavBar/NavBar'
+import Lander from './Components/Lander/Lander'
+import Footer from './Components/Footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-<>
-</>
-   )
+    <div>
+      <NavBar />
+      <Lander />
+      <Footer />
+    </div>
+  )
 }
 
 export default App

@@ -1,0 +1,36 @@
+.Menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+@media (max-width: 1020px) {
+  .Menu {
+    display: flex;
+  }
+}
+
+.Menu .bar1,
+.Menu .bar2,
+.Menu .bar3 {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.Menu.active .bar1 {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.Menu.active .bar2 {
+  opacity: 0;
+}
+
+.Menu.active .bar3 {
+  transform: rotate(-45deg) translate(5px, -6px);
+}

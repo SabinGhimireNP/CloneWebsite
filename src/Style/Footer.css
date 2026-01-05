@@ -1,0 +1,142 @@
+.Footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.TopFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.TopFooter .Logo {
+  flex: 1;
+  min-width: 200px;
+}
+
+.TopFooter .Links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.TopFooter .link button {
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.TopFooter .link button:hover {
+  background-color: #333;
+  border-color: #666;
+  transform: translateY(-2px);
+}
+
+.BottomFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Copyright {
+  flex: 1;
+  min-width: 200px;
+}
+
+.Copyright p {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.Designed {
+  flex: 1;
+  text-align: right;
+  min-width: 200px;
+}
+
+.Designed .top p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.Designed .bottom p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Footer {
+    padding: 30px 15px 15px;
+  }
+
+  .TopFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .TopFooter .Links {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .TopFooter .link button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .BottomFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .Designed {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .TopFooter .link button {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+
+  .Copyright p,
+  .Designed .top p {
+    font-size: 13px;
+  }
+
+  .Designed .bottom p {
+    font-size: 11px;
+  }
+}

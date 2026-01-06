@@ -1,0 +1,36 @@
+*{
+      color: white;
+      font-family: 'Poppins', sans-serif;
+}
+.HeroLander {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+
+}
+.LanderContent{
+ display: flex;
+    flex-direction: column;
+}
+
+.LanderContent .highlight{
+    color: #ffd000;
+    padding: 0.3em;
+}
+.LanderContent .text{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.HireMe{
+    width: fit-content;
+    padding: 1.2em 2em;
+    margin-top: 1em;
+    background-color: rgb(128, 11, 163);
+    color: black;
+    font-weight: 600;
+    border-radius: 5em;
+    text-decoration: none;
+}

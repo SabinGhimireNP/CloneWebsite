@@ -1,11 +1,12 @@
 import React from 'react'
-import logo from '../assets/Logo.png'
+import logo from '/Logo.png'
 
-function Logo() {
+function Logo({ className }) {
   return (
-    <img 
-      src={logo} 
-      alt="Logo" 
+    <img
+      src={logo}
+      alt="Logo"
+      className={className}
     />
   )
 }

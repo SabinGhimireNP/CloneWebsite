@@ -7,14 +7,14 @@ function Lander() {
    {/* Hero Lander */}
     <div className="HeroLander">
       <div className="LanderContent">
-        <span>
-          Hello,
+        <span className='text'>
+          Hello, <br />
         </span>
 
-        <span>
-          I'm
-           <spam>Sanchit</spam>
-           <br/>, a Web Developer
+        <span className='text'>
+          I'm 
+           <spam className="highlight">Sanchit</spam>
+           <br/>A Web Developer
         </span>
 
         <span>
@@ -22,11 +22,12 @@ function Lander() {
         </span>
 
         <a className="HireMe">
-          <img src="" alt="" />
-           <span> Hire Me</span>
+          <img src="../../assets/Logo.png" alt="" />
+           <span> Hire Me!</span>
         </a>
       </div>
       <div className="ImageContainer">
+        Image
       </div>
     </div>
 

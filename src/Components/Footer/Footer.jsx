@@ -8,7 +8,7 @@ function Footer() {
     <div className='Footer'>
       <div className="TopFooter">
         <div className="Logo">
-          <Logo />
+          <Logo className="Logo_footer" />
         </div>
         <div className="Links">
           <div className="link"><button>

@@ -7,30 +7,27 @@ function Lander() {
    {/* Hero Lander */}
     <div className="HeroLander">
       <div className="LanderContent">
-        <span className='text'>
-          Hello, <br />
-        </span>
+        <span className='hello'>Hello,</span>
 
         <span className='text'>
-          I'm 
-           <spam className="highlight">Sanchit</spam>
-           <br/>A Web Developer
+          I'm <span className="highlight">Sanchit</span>
+          <br/>A Web Developer
         </span>
 
-        <span>
+        <span className='description'>
            A developer who crafts digital experiences. Welcome to a World of Creative Possibilities where Vision Meets Design.
         </span>
 
-        <a className="HireMe">
-          <img src="../../assets/Logo.png" alt="" />
-           <span> Hire Me!</span>
+        <a className="HireMe" href="#">
+          <img className="HireMeImage" src="/HireMe.avif" alt="" />
+          <span>Hire Me!</span>
         </a>
       </div>
       <div className="ImageContainer">
-        Image
+        <img src="/Sanchit.png" alt="Sanchit" />
       </div>
     </div>
-
+dfdfasf
     {/* About me */}
     <div className="AboutMe">
       <span>About Me</span>

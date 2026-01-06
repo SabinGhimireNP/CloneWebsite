@@ -1,36 +1,96 @@
-*{
-      color: white;
-      font-family: 'Poppins', sans-serif;
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
+
 .HeroLander {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 80vh;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 5%;
+    background-color: #1e1e1e;
 }
-.LanderContent{
- display: flex;
+
+.LanderContent {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    /* max-width: 600px; */
 }
 
-.LanderContent .highlight{
+.LanderContent .hello {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.LanderContent .highlight {
     color: #ffd000;
-    padding: 0.3em;
-}
-.LanderContent .text{
-    font-size: 2.5em;
-    font-weight: 600;
 }
 
-.HireMe{
+.LanderContent .text {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.LanderContent .description {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.HireMe {
     width: fit-content;
-    padding: 1.2em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em 1.5em;
     margin-top: 1em;
-    background-color: rgb(128, 11, 163);
-    color: black;
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6366f1 100%);
+    color: white;
     font-weight: 600;
-    border-radius: 5em;
+    border-radius: 50px;
     text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+
+.HireMe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
+}
+
+.HireMe span {
+    font-size: 1.1em;
+    color: white;
+}
+
+.HireMeImage {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+}
+
+.ImageContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: tomato;
+}
+
+.ImageContainer img {
+    height: 38rem;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    filter: grayscale(0);
+    z-index: 10;
 }

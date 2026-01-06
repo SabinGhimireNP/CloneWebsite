@@ -1,0 +1,180 @@
+
+/* Base NavBar Styles */
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Section */
+.NavBar .Logo img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.NavBar .Logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop/Normal NavBar */
+.NavBar.Mobile {
+  display: none;
+}
+
+.NavBar.Noraml {
+  display: flex;
+}
+
+/* Links Section */
+.NavBar .Links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.NavBar .link {
+  list-style: none;
+}
+
+.NavBar .link li {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.NavBar .link li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4a9eff;
+  transition: width 0.3s ease;
+}
+
+.NavBar .link li:hover {
+  color: #4a9eff;
+}
+
+.NavBar .link li:hover::after {
+  width: 100%;
+}
+
+/* Contact Button */
+.ContactBtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.ContactBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.ContactBtn:active {
+  transform: translateY(0);
+}
+
+/* Mobile NavBar */
+.NavBar.Mobile .NavMenu {
+  position: fixed;
+  top: 80px;
+  right: -100%;
+  width: 280px;
+  height: calc(100vh - 80px);
+  background-color: rgba(26, 26, 26, 0.98);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  gap: 30px;
+  transition: right 0.4s ease;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.NavBar.Mobile .NavMenu.active {
+  right: 0;
+}
+
+.NavBar.Mobile .link li {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.NavBar.Mobile .link li:hover {
+  color: #4a9eff;
+  padding-left: 10px;
+}
+
+.NavBar.Mobile .ContactBtn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .NavBar.Noraml {
+    display: none;
+  }
+
+  .NavBar.Mobile {
+    display: flex;
+  }
+
+  .NavBar {
+    padding: 15px 20px;
+  }
+
+  .NavBar .Logo img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .NavBar {
+    padding: 12px 15px;
+  }
+
+  .NavBar .Logo img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .NavBar.Mobile .NavMenu {
+    width: 100%;
+    right: -100%;
+  }
+
+  .NavBar.Mobile .link li {
+    font-size: 16px;
+  }
+}

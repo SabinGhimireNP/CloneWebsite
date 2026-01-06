@@ -62,6 +62,21 @@ function Lander() {
 
     {/* Skills */}
     <div className="Skills">
+      <span><p>My Skills & Tools</p></span>
+      <span><h2>My Skills</h2></span>
+      <span><p>I own a diverse range of talents and expertise that I have developed over the years. From technical skills such as programming, and Web Development, to creative abilities like Graphics Design, UI/UX and Content Writing.</p></span>
+      <div>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+
     </div>
 
     {/* Contact Me */}

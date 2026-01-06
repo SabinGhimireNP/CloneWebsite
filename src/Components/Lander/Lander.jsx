@@ -81,6 +81,32 @@ function Lander() {
 
     {/* Contact Me */}
     <div className="ContactMe">
+      <h1>Contact Me</h1>
+      <div>
+        <div className="left">
+          <h2>Get in Touch</h2>
+          <p>
+            <b>Email: </b>admin@sanchitpandey.com.np
+          </p>
+          <p>
+            <b>Phone: </b>+977 9841148149
+          </p>
+
+          <div>
+           <a href="">Facebook</a>
+           <a href="">GitHub</a>
+           <a href="">Instagram</a>
+          </div>
+      </div>
+
+      <form action="">
+        <h2>Contact Form</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      </div>
     </div>
    </>
   )

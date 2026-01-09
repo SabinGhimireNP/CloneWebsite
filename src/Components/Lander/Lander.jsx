@@ -7,7 +7,7 @@ function Lander() {
    {/* Hero Lander */}
     <div className="HeroLander">
       <div className="LanderContent">
-        <span className='hello'>Hello,</span>
+        <span className='hello'><b>Hello,</b></span>
 
         <span className='text'>
           I'm <span className="highlight">Sanchit</span>
@@ -27,7 +27,6 @@ function Lander() {
         <img src="/Sanchit.png" alt="Sanchit" />
       </div>
     </div>
-dfdfasf
     {/* About me */}
     <div className="AboutMe">
       <span>About Me</span>

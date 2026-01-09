@@ -1,5 +1,5 @@
 import './App.css'
-import NavBar from './Components/NavBar/NavBar'
+import NavBar from './Components/NavBar/NavBAr'
 import Lander from './Components/Lander/Lander'
 import Footer from './Components/Footer/Footer'
 

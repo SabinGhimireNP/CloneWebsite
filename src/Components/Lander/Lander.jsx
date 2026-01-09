@@ -19,7 +19,7 @@ function Lander() {
         </span>
 
         <a className="HireMe" href="#">
-          <img className="HireMeImage" src="/HireMe.avif" alt="" />
+          <img className="HireMeImage" src="/Icon/HireMe.avif" alt="" />
           <span>Hire Me!</span>
         </a>
       </div>
@@ -30,25 +30,25 @@ function Lander() {
     {/* About me */}
     <div className="AboutMe">
       <span>About Me</span>
-      <span> <h1> What I do</h1></span>
-      <span>Namaste! I'm Sanchit Pandey a skilled Front-End Developer, transforming designs into captivating web experiences. Proficient in HTML, CSS, JavaScript, React and Tailwind, I merge aesthetics with functionality to craft user-centric sites. Let's create a digital masterpiece together!</span>
+      <span> <h1 className='aboutTitle'> What I do</h1></span>
+      <span className='aboutDescption'>Namaste! I'm Sanchit Pandey a skilled Front-End Developer, transforming designs into captivating web experiences. Proficient in HTML, CSS, JavaScript, React and Tailwind, I merge aesthetics with functionality to craft user-centric sites. Let's create a digital masterpiece together!</span>
       <div>
         <div className="btn">
-          <img src="" alt="" />
+          <img src="/Icon/gd.jpg" alt=""className='Icon' />
           <div>
             <h2>Graphics Design</h2>
             <p>रंगिन अनुभव प्रदान गर्दै</p>
           </div>
         </div>
         <div className="btn">
-          <img src="" alt="" />
+          <img src="/Icon/ui.jpg" alt=""className='Icon'  />
           <div>
             <h2>UI/UX Design</h2>
             <p>रंग र रूपले नयाँ कथा बोलाउँदै</p>
           </div>
         </div>
         <div className="btn">
-          <img src="" alt="" />
+          <img src="/Icon/web.jpg" alt="" className='Icon'  />
           <div>
             <h2>Web Development</h2>
             <p>वेब विकासमा भविष्य निर्माण गर्दै |</p>

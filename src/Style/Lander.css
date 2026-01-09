@@ -11,7 +11,6 @@
     height: 100vh;
     padding-left: 4em ;
     padding-right: 1em ;
-    background-color: #1e1e1e;
 }
 
 .LanderContent {
@@ -93,4 +92,42 @@
     bottom: 8rem;
     filter: grayscale(0);
     z-index: 10;
+}
+
+/* About me */
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.aboutTitle {
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.aboutDescption{
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 91%;
+    text-align: center;
+}
+.AboutMe .Icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.btn{
+    display: flex;
+    background:rgb(26, 10, 108);
+    padding: 1.1em 3em;
+    border-radius: 50px;
+    cursor: pointer;
+    gap: 1em;
+    margin: 1.5em;
 }

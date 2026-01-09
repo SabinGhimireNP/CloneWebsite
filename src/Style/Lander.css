@@ -131,3 +131,6 @@
     gap: 1em;
     margin: 1.5em;
 }
+.btn:hover{
+    background:rgb(147, 147, 6);
+}

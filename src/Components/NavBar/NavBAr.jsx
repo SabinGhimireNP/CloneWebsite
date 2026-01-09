@@ -20,7 +20,6 @@ function NavBar() {
       </div>
     </div>
 
-/
     <div className='NavBar Mobile'>
       <div className="Logo">
         </div>
